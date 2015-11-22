@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   # 追加
+  get '/items' => 'items#index'
   get '/items/:id' => 'items#show'
 
   # The priority is based upon order of creation: first created -> highest priority.
