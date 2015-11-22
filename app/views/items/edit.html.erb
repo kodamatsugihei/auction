@@ -1,0 +1,30 @@
+<h1>商品変更フォーム</h1>
+<%= form_for @item do |f| %>
+  <p>
+    商品名：<br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    商品詳細：<br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    価格：<br />
+    <%= f.text_field :price %>
+  </p>
+  <p>
+    売上主ID：<br />
+    <%= f.text_field :seller_id %>
+  </p>
+  <p>
+    電子メール：<br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    商品画像URL：<br />
+    <%= f.text_field :image_url %>
+  </p>
+  <p>
+    <%= f.submit "更新" %>
+  </p>
+<% end %>
